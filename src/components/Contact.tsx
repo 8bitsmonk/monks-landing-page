@@ -1,4 +1,3 @@
-import React from "react";
 import loc from "../assets/loc.png";
 import call from "../assets/call.png";
 import email from "../assets/email.png";

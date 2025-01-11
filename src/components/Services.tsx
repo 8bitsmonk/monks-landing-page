@@ -1,5 +1,3 @@
-import React from "react";
-
 import box1 from "../assets/box1.png";
 import box2 from "../assets/box2.png";
 import box3 from "../assets/box3.png";

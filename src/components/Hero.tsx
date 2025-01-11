@@ -1,5 +1,3 @@
-import React from "react";
-
 import yes from "../assets/yes.png";
 
 function Hero() {

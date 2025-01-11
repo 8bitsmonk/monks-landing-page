@@ -1,4 +1,3 @@
-import React from "react";
 import about1 from "../assets/about1.png";
 
 function AboutUs() {
