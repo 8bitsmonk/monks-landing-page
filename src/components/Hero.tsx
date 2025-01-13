@@ -6,6 +6,12 @@ function Hero() {
   // className = "hidden md:block"; // Hidden on mobile, shows on md+
   // className = "md:hidden"; // Shows on mobile, hidden on md+
 
+
+  const handleClick = ()=>{
+    const selection = document.getElementById("services-section");
+    selection?.scrollIntoView({ behavior: "smooth" });
+  }
+
   return (
     <section
       id="home-section"
@@ -30,7 +36,7 @@ function Hero() {
               </h5>
             </div>
             <div className="mb-5 md:mb-0">
-              <button
+              <button onClick={handleClick}
                 className="rounded-md md:px-24 px-16 py-2 bg-black text-white md:text-2xl font-semibold 
     hover:bg-gray-700 hover:scale-105 hover:shadow-lg focus:outline-none  
     transition-all duration-300 ease-in-out active:scale-95"

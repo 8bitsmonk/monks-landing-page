@@ -1,13 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/webp" href="/monks.webp" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React + TS</title>
+    <title>8bitsmonk</title>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+    <script>
+      const titles = [
+        "8bitsmonk",
+        "Got an Idea? Let’s Build! 💡",
+        "We Build Apps 🚀",
+        "Code That Works 💻",
+        "AI, Done Right 🤖",
+        "Apps, Fast ⚡",
+        "Smart Code 🧠",
+        "Tech That Clicks 🔧",
+        "Custom Software ✔️",
+        "Apps, No Stress 😎",
+        "Build Better 💡",
+        "Tech, Simplified ⚙️",
+      ];
+
+      let currentIndex = 0;
+
+      function setNextTitle() {
+        document.title = titles[currentIndex];
+        currentIndex = (currentIndex + 1) % titles.length;
+      }
+
+      setInterval(setNextTitle, 2000);
+    </script>
   </body>
 </html>

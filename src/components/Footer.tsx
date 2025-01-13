@@ -7,10 +7,22 @@ import logo from "../assets/logo.png";
 
 
 
-
-
-
 const Footer = () => {
+
+
+    const handleClick = (id:string) => {
+      const selection = document.getElementById(id);
+      if (selection) {
+        selection.scrollIntoView({ behavior: "smooth" });
+      } else {
+        console.error("Element with id 'services-section' not found.");
+      }
+    };
+
+
+
+    
+
 
 
   return (
@@ -25,19 +37,20 @@ const Footer = () => {
           <div>
             <h2 className="text-2xl font-bold mb-6">COMPANY</h2>
             <ul className="space-y-3">
-              <li>
-                <a href="/about" className="hover:underline">
-                  About Us
-                </a>
+              <li onClick={() => handleClick("about-section")}>
+                <a className="hover:underline hover:cursor-pointer">About Us</a>
               </li>
-              <li>
-                <a href="/contact" className="hover:underline">
+              <li onClick={() => handleClick("contact-section")}>
+                <a className="hover:underline hover:cursor-pointer">
                   Contact Us
                 </a>
               </li>
             </ul>
             {/* Logo */}
-            <div className="mt-12" >
+            <div
+              className="mt-12 hover:cursor-pointer"
+              onClick={() => handleClick("home-section")}
+            >
               <img src={logo} alt="8BitsMonk" className="h-24" />
             </div>
           </div>
@@ -80,15 +93,20 @@ const Footer = () => {
 
               {/* Social Links */}
               <div className="flex gap-4 mt-6">
-                <a href="#" className="hover:opacity-80">
+                {/* <a href="#" className="hover:opacity-80">
                   <FaInstagram size={20} />
-                </a>
-                <a href="#" className="hover:opacity-80">
+                </a> */}
+                <a
+                  href="https://x.com/8bitsmonk"
+                  target="_blank"
+                  className="hover:opacity-80 flex flex-row items-center hover:underline"
+                >
                   <FaSquareXTwitter size={20} />
+                  <p className="pl-2">x.com</p>
                 </a>
-                <a href="#" className="hover:opacity-80">
+                {/* <a href="#" className="hover:opacity-80">
                   <FaLinkedin size={20} />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

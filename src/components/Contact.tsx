@@ -78,7 +78,7 @@ function Contact() {
           </div>
 
           {/* Contact Form */}
-          <div className="p-6 rounded-lg w-full lg:w-1/2">
+          <div className="p-6 rounded-lg w-full lg:w-1/2 -mt-8">
             <h1 className="text-2xl lg:text-4xl font-bold mb-8">
               Ready to Get Started?
             </h1>
